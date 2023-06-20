@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Uploading an Image</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="d-flex vh-100 justify-content-center align-items-center">
+    <form class="w-30 bg-warning text-center p-4" action="product_upload.php" method="post" enctype="multipart/form-data">
+        <h3 class="text-white">Admin Upload</h3>
+        <input type="text" class="form control" placeholder="product_name" name="name"> 
+        <input type="number" class="mt-2 form-control" placeholder="product_price" name="price"> 
+        <textarea class="mt-2 form-control" rows="3" placeholder="prod_description" name="details"></textarea>
+        <input class="mt-2 form-control" type="file" name="pdt_img" accept="image/*">
+        <br>
+        <input class="bg-success form-control bg-success text-white" type="submit" value="upload">
+
+    </form>
+</body>
+</html>
